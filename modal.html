@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Learning</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style type="text/css">
+  
+        /* Aqui começa o código CSS */
+        
+        #testimonials{
+          width: 500px; 
+          margin: 0 auto;
+      font:15px Tahoma,Georgia, serif;
+      color:#616161;
+        
+      }
+      #testimonials h2 {
+      
+          font:26px Georgia, serif;
+          
+         
+      }
+      #testimonials li {
+          border-top:2px solid rgba(0,0,0,0);
+          clear:both;
+          padding:28px 0;
+        list-style-type: none;
+        
+      }
+      #testimonials li img {
+          border:5px solid transparent;
+          float:left;
+          -moz-box-shadow:0 0 10px #333;
+          -webkit-box-shadow:0 0 10px #333;
+          box-shadow:0 0 12px #333;
+          -moz-transform:rotate(-5deg);
+          -o-transform:rotate(-5deg);
+          -webkit-transform:rotate(-5deg);
+          transform:rotate(-5deg);
+          margin:0 22px 0 0;
+        
+      }
+      #testimonials li:nth-child(2n) img {
+          float:right;
+          -moz-transform:rotate(5deg);
+          -o-transform:rotate(5deg);
+          -webkit-transform:rotate(5deg);
+          transform:rotate(5deg);
+          margin:0 0 0 2px;
+        
+      }
+      #testimonials p {
+          padding:0 0 2px;
+         
+      }
+      #testimonials li:first-child {
+          border:none;
+      
+      }
+      #testimonials div {
+          overflow:none;
+      }
+      </style> 
+      
+</head>
+<body>
+    <div class="layer-page"></div>
+    
+      <ul id="testimonials">
+          <li class="modal">
+          <!--Insira a URL da imagem entre as aspas abaixo -->
+          
+              <img class="img-modal"  src="./img/img01.jpg" width="140"/>
+        
+                <h2 class="title">Mario Couto</h2>
+              <div>
+                  <p class="text-p">
+         <!--Insira o depoimento aqui -->
+              
+                      Tivemos uma boa impressão do nosso trabalho com vossa empresa. Fomos tratados com agilidade, atenção e carinho, da mesma forma que procuramos atender nossos clientes.
+              
+                  </p>
+              </div>
+          </li>
+        
+          <!--Faça o mesmo procedimento para os outros depoimentos -->
+        
+          <li class="modal">
+              <img class="img-modal" src="./img/img02.jpg" width="140"/>
+          
+              <h2 class="title">Carlos Henrique Lima</h2>
+          
+              <div>
+                  <p class="text-p">
+              
+                      Excelente o trabalho da Agência! Conseguiram integrar dois aspectos de extrema importância para mim enquanto cliente: o primeiro foi o resultado visual do site, que ficou limpo e adequadíssimo ao que pretendia. 
+              
+                  </p>
+              </div>
+          </li>
+          <li class="modal">
+              <img class="img-modal" src="./img/img03.jpg" width="140" />
+          
+              <h2 class="title">Rubem Silveira</h2>
+              <div>
+                  <p class="text-p">
+              
+      Fiquei totalmente satisfeito com o trabalho realizado de forma online, excelente atendimento e prontidão, a nossa empresa é de Portugal e queremos continuar com esta excelente parceria.
+              
+                  </p>
+              </div>
+          </li>
+      
+      </ul>
+
+
+      <div class="modal-container">
+        <span class="close">X</span>
+        <img class="img-modal-container" src="" alt="" />
+        <h2 class="title-modal-container"></h2>
+        <p class="text-modal-container"></p>
+        
+      </div>
+
+    <script src="./modal.js"></script>
+    
+</body>
+</html>
