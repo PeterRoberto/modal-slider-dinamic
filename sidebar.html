@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Learning</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style type="text/css">
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            background-color: #343a40;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            color: #17a2b8;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+    </style> 
+      
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Minha Sidebar</h2>
+        <ul class="sidebar-list">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li class="has-children">
+            <a href="#services">Serviços</a>
+          </li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+    </div>
+
+    <script src="./sidebar.js"></script>
+    
+</body>
+</html>
